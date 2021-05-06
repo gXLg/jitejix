@@ -1,21 +1,31 @@
 # jtegjyqws
 An esolang created for fun.
+
 Inspired by Brainfuck.
+
 Probably not turing complete, who knows.
+
 The name was chosen while randomly typing letters.
-Extensions: `.jj`, `.j`, none
+
+Extensions: `.jj`, `.j`, none.
 
 # Concept
 
 Only 256 cells, wrap around.
+
 Cell values 0-255, wrap around.
 
+
 At beginning: all cells with the value of their index:
-[0,1,2,3,4,5,...254,255]
 
-There is stack = 0, acts like a cell
+[0,1,2,3,4,5,...254,255].
 
-Can access stdout, not stdin
+
+There is stack = 0, acts like a cell.
+
+
+Can access stdout, not stdin.
+
 
 # Instructions
 
