@@ -1,5 +1,7 @@
-# jtegjyqws
+# jitejix
 An esolang created for fun.
+
+Pronounciated as `[d zh i t e d zh i k s]`.
 
 Inspired by Brainfuck.
 
@@ -10,7 +12,6 @@ The name was chosen while randomly typing letters.
 Extensions: `.jj`, `.j`, none.
 
 # Concept
-
 Only 256 cells, wrap around.
 
 Cell values 0-255, wrap around.
@@ -65,3 +66,30 @@ Can access stdout, not stdin.
 `$` - jump to last `?`
 
 All other chars are ignored completely.
+
+# Hello World
+
+"Hello World!\n" - example written in jitejix that shows its functionality:
+```
+>>>_*@*@>!
+////^<<<!
+>>>>>>>!!
+>>>!
+_\!
+_+<%>++*@>>>>>>>!
+^_\*@<%!
+->!
+<<<<!
+<<<<<<<<!
+_\@>!
+_@>>>@>>!
+```
+Sure can be written shorter.
+
+# Interpreter
+Currently only a interpreter available for my language, written in python.
+
+To use it, do:
+```
+ $ python3 jitejix.py <filename>
+```
