@@ -63,7 +63,7 @@ while i < len ( file ) :
     st -= 1
     st %= 256
   elif char == "$" :
-    while not file [ i + 1 ] == "?" : i -= 1
+    while not file [ i + 1 ] in "?#" : i -= 1
   i += 1
 
 #print ( bottle )

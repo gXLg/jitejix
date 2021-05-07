@@ -87,7 +87,7 @@ while ( i < file.length ) {
     st %= 256
     break
   case "$" :
-    while ( file [ i + 1 ] != "?" ) i --
+    while ( ( file [ i + 1 ] != "?" ) && ( file [ i + 1 ] != "#" )) i --
     break
   }
   i ++
