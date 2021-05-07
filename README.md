@@ -87,9 +87,13 @@ _@>>>@>>!
 Sure can be written shorter.
 
 # Interpreter
-Currently only a interpreter available for my language, written in python.
+Currently only a interpreter available for my language, written in python and javascript.
 
 To use it, do:
 ```
  $ python3 jitejix.py <filename>
+```
+or
+```
+ $ node jitejix.js <filename>
 ```
