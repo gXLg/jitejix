@@ -63,7 +63,7 @@ Can access stdout, not stdin.
 
 `~` - decrease stack
 
-`$` - jump to last `?`
+`$` - jump to last `?` or `#`
 
 All other chars are ignored completely.
 
