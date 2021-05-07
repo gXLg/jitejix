@@ -101,7 +101,6 @@ def programm ( screen ) :
       st += bottle [ c ]
       st %= 256
     elif char == "\\" :
-      yellow.append ( "st" )
       bottle [ c ] = st
     elif char == "*" :
       bottle [ c ] +=\
