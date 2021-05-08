@@ -34,16 +34,12 @@ def programm ( screen ) :
 
     output_.clear ( )
     output_.box ( )
-    screen.refresh ( )
-    output_.refresh ( )
 
+    output.clear ( )
     output.addstr ( 0, 0, out + "_" )
-    output.refresh ( )
 
     prog_.clear ( )
     prog_.box ( )
-    screen.refresh ( )
-    prog_.refresh ( )
 
     m = ( y // 4 - 3 ) * ( x - 3 ) - 1
     off = i // m
@@ -52,7 +48,6 @@ def programm ( screen ) :
     prog.addch ( j // ( x - 3 ),
       j % ( x - 3 ),
       file [ i ], curses.color_pair ( 1 ))
-    prog.refresh ( )
 
     debug.clear ( )
     debug.box ( )
@@ -67,16 +62,21 @@ def programm ( screen ) :
       debug.addstr ( 17, 1, "[" + str ( st ) + "]", curses.color_pair ( color ))
     except : debug.addstr ( 1, 1, "Could not display" )
     screen.refresh ( )
+    output_.refresh ( )
+    output.refresh ( )
+    prog_.refresh ( )
+    prog.refresh ( )
     debug.refresh ( )
 
   draw ( i )
 
+  curses.halfdelay ( 5 )
   while i < len ( file ) :
     yellow.clear ( )
     char = file [ i ]
     key = screen.getch ( )
     if key == 17 : return
-    if not key == 32 : continue
+    if not key in [ 32, -1 ] : continue
     if char == "+" :
       bottle [ ( c + 1 ) % 256 ] += 1
       bottle [ ( c + 1 ) % 256 ] %= 256
