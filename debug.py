@@ -74,6 +74,9 @@ def programm ( screen ) :
   while i < len ( file ) :
     yellow.clear ( )
     char = file [ i ]
+    if not char in "+-&/\\*%_?#!><^@~$" :
+      i += 1
+      continue
     key = screen.getch ( )
     if key == 17 : return
     if not key in [ 32, -1 ] : continue
