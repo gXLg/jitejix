@@ -1,3 +1,4 @@
+![logo](https://user-images.githubusercontent.com/65429873/117552007-36988b00-b049-11eb-963b-df0d485c1838.png)
 
 # jitejix
 An esolang created for fun.
