@@ -89,7 +89,7 @@ _@>>>@>>!
 Sure can be written shorter.
 
 # Interpreter
-Currently only a interpreter available for my language, written in python and javascript.
+Currently an interpreter available for my language, written in python and javascript.
 
 To use it, do:
 ```
